@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navigation">
+        <div class="page-title">E-grocerry</div>
+        <div class="nav">
+            <a href="#title" class="nav-item">Home</a>
+            <a href="#content-left" class="nav-item">Our Package</a>
+            <a href="/" class="nav-item">Call Us</a>
+        </div>
+    </header>
+    <main>
+        <div id="title" class="content-title">
+            <div>
+                <h1>Top Rated E-Groceries Shop in Indonesia</h1>
+            </div>
+            <div>
+                <span>Everyday with best ingredient</span>
+            </div>
+        </div>
+        <div id="content" class="content">
+            <div id="content-left" class="content-left">
+                <div id="content-image" class="content-image">
+                    <img src="asset/images.jpeg" class="image active" alt="ini foto">
+                    <img src="asset/Lampu.jpeg" class="image" alt="">
+                    <span>Fresh Everyday</span>
+                </div>
+                <div>
+                    <button id="next-button" onclick="nextSlide()">Next image</button>
+                </div>
+                <div class="user">
+                    <div> 
+                        <img  id="profile" src="asset/profile.png" alt="foto profile">
+                    </div>
+                    <div id="username">
+                        <h7>Florece Hughes</h7>
+                        <br>
+                        <h8> <i>rumah tangga, 28</i> </h8>
+                    </div>
+                </div>
+                <div id="offer" class="offer">
+                    <div id="title-offer" class="title-offer">
+                        <p> <b>Use this space to provide users with more information about your offer, Consider it a follow-up to your headline and explain the benefits of your service of product</b></p>
+                    </div>
+                    <div id="point-1" class="point-1">
+                        <div id="number-1" class="number-1"> 
+                        1
+                        </div>
+                        <div id="number-text" class="number-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quasi sed laboriosam dolor sint consequuntur rerum quas deleniti autem exercitationem quia nihil ipsam veritatis expedita incidunt asperiores, saepe omnis. Veritatis!</p>   
+                        </div>
+                    </div>
+                    <div id="point-2" class="point-2">
+                        <div id="number-2" class="number-2"> 
+                        2
+                        </div>
+                        <div id="number-text" class="number-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quasi sed laboriosam dolor sint consequuntur rerum quas deleniti autem exercitationem quia nihil ipsam veritatis expedita incidunt asperiores, saepe omnis. Veritatis!</p>   
+                        </div>
+                    </div>
+                    <div id="point-3" class="point-3">
+                        <div id="number-3" class="number-3"> 
+                        3
+                        </div>
+                        <div id="number-text" class="number-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quasi sed laboriosam dolor sint consequuntur rerum quas deleniti autem exercitationem quia nihil ipsam veritatis expedita incidunt asperiores, saepe omnis. Veritatis!</p>   
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="content-right" class="content-right">
+                <form name="content-form" class="content-form">
+                    <div id="contact-us" class="contact-us">
+                        <h1>Contact Us</h1>
+                        <h4>Sales akan menghubungi anda 1x24 jam setelah data kami terima.</h4>
+                    </div>
+                    
+                    <label for="your-name">Your Name</label>
+                    <input id="your-name" type="text" name="your-name" placeholder="first and last name">
+                    <p id="name-error" class="error-message"></p>
+              
+                    <label for="email">Email Address</label>
+                    <input id="email" type="email" name="email" placeholder="example@gmail.com">
+                    <p id="email-error" class="error-message"></p>
+              
+                    <label for="interest">What are you interested in?</label>
+                    <select type="select" name="interest">
+                        <option value="">--select interest--</option>
+                        <option value="football">Football</option>
+                        <option value="badminton">Badminton</option>
+                    </select>
+                    <p id="interest-error" class="error-message"></p>
+
+                    <button id="button" type="submit" class="button"> SEND</button>
+                </form>
+            </div>
+        </div>
+
+        
+        <h1 class="title-pack">Our Package</h1>
+        
+        <div id="content-middle" class="content-middle">
+            <div id="package-1" class="package-1">
+                <img src="asset/Lampu.jpeg"       class="image-pack" alt="logo lampu">
+                <div class="vege">
+                    <h1>Fresh Vegetable</h1>
+                    <p>Sayuran segar langsung dari sumber pertanian terbaik</p>
+                </div>
+                <img src="asset/Lampu.jpeg" class="image-pack" alt="logo lampu">
+                <div class="fruit">
+                    <h1>Fresh Fruit</h1> 
+                    <p>Buah dengan kualitas terbaik dari local atau import dan harga yang menarik</p>
+                </div>
+                <img src="asset/Lampu.jpeg" class="image-pack" alt="logo lampu">
+                <div class="Delivery">
+                    <h1>Instant Delivery</h1>
+                    <p>Di kirim instan oleh kurir yang telah di training dengan SOP untuk menjaga kondisi belanja kamu</p>
+                </div>
+            </div>
+            <div id="package-2" class="package-2">
+                <img src="asset/Lampu.jpeg" class="image-pack" alt="logo lampu">
+                <div class="ingredient">
+                    <h1>Kitchen ingredient</h1>
+                    <p>Bumbu dapur lengkap untuk keperluan memasak kamu</p>
+                </div>
+                <img src="asset/Lampu.jpeg" class="image-pack" alt="logo lampu">
+                <div class="set">
+                    <h1>Kitchen Set</h1>
+                    <p>Segala jenis alat masak untuk membantu keperluan memasak</p>
+                </div>
+                <img src="asset/Lampu.jpeg" class="image-pack" alt="logo lampu">
+                <div class="bundling">
+                    <h1>Bundling Set</h1>
+                    <p>Bingung masak apa? sudah tersedia paket untuk kamu masak di dapurmu</p>
+                </div>
+            </div>
+            <div id="closing" class="closing">
+                <h1>Your Closing Argument Headline</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium voluptate incidunt delectus itaque, odit tempora veniam rem culpa asperiores dolores, atque rerum quo deleniti. Autem quisquam harum suscipit assumenda maxime?</p>
+            </div>
+            <button type="submit" class="call-action"> Call To Action</button>
+    </main>
+
+    <footer>
+
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
