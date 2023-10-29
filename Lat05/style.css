@@ -1,0 +1,42 @@
+body {
+    background-image: url('images/background.png');
+} 
+
+#navigate-container {
+    background-color: rgb(68, 30, 30);
+    display: flex;
+    column-gap: 30%;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color:burlywood;
+    font-size: 1.5rem;
+}
+
+#content-container {
+    background-image: url('images/topbkg.png'), url('images/midbkg.jpg');
+    background-repeat: no-repeat, repeat;
+    background-size: 100%;
+    padding: 5%;
+}
+
+#header, #header-2, #header-image, #sponsor, #copyright {
+    justify-content:center;
+    display: flex;
+}
+
+#copyright {
+    background-image: url('images/botbkg.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-size: 2rem;
+    padding-bottom: 8rem;
+}
+
+#drink-1, #drink-2, #drink-3, #drink-4, #drink-5, .drink-name, .food-image, .food-name {
+    display: flex;
+    justify-content: center;
+}
+
